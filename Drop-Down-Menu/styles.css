@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 10px 15px 5px 15px;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.ul-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.options {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.add-options {
+  display: block;
+  float: right;
+  background-color: aliceblue;
+}
+
+/* [hidden] {
+  display: none;
+} */
+
+.add-optionsLi {
+  padding: 5px 15px 5px 15px;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.add-optionsLi:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+main {
+  height: calc(100vh - 15px);
+  background-color: antiquewhite;
+}
