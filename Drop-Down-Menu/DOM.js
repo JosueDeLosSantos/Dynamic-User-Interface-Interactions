@@ -1,5 +1,5 @@
-// append options to selectedTag tags
-export function appendOption(selectedTag, array) {
+// append multiple options to selectedTag
+export function appendOptions(selectedTag, array) {
   array.forEach((element) => {
     const optionsFactory = document.createElement("li");
     const linksFactory = document.createElement("a");
@@ -8,4 +8,13 @@ export function appendOption(selectedTag, array) {
     linksFactory.innerText = `${element}`;
     return selectedTag.appendChild(optionsFactory);
   });
+}
+
+// append single options to selectClass tag
+export function appendOption(selectClass, option) {
+  const optionMaker = document.createElement("option");
+  optionMaker.classList.add("auto");
+  optionMaker.setAttribute("value", `${option}`);
+  optionMaker.innerText = `${option}`;
+  return selectClass.appendChild(optionMaker);
 }
