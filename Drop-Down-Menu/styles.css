@@ -44,6 +44,10 @@ a {
   background-color: aliceblue;
 }
 
+.start {
+  visibility: hidden;
+}
+
 /* [hidden] {
   display: none;
 } */
